@@ -1,0 +1,29 @@
+
+header {
+    background-color: whitesmoke;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo2{
+    
+    text-decoration: none;
+    color: #081b29;
+    font-size: large;
+    margin-left: 1em;
+    font-style: oblique;
+}
+.uphome a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 1em;
+    font-style: oblique;
+}
+.uphome a:hover{
+    color: brown;
+}

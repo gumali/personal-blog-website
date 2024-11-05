@@ -1,0 +1,96 @@
+.s1{
+    display: flex;
+    align-items: center;
+    padding: 150px 50px;
+    height: 50vh;
+    background: url(../image/backk.jpg)no-repeat;
+ justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+.s1 h2{
+    font-size: 40px;
+  
+}
+.s1 .s1-content{ 
+height: 15em; 
+    
+}
+
+.s1-content .button{
+
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+background-color: rgb(9, 55, 124);
+margin-left: 9em;
+}
+.bl{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #b77813; /* Darker color on hover */
+}
+.s1-content #click{
+    margin-left:9em ;
+   display: flex;
+
+}
+ .socail{
+    position: absolute;
+    bottom: 20em;
+        width: 170px;
+        margin-left: 100px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+ }
+
+ .socail::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: -1;
+}
+.socail a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #00abf0;
+        border-radius: 50%;
+        font-size: 20px;
+        color: #00abf0;
+        text-decoration: none;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+    }
+    .socail a:hover{
+        color: #081b29;
+    }
+    .socail a::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00abf0;
+        z-index: -1;
+        transition: .5s;
+
+    }
+    .socail a:hover::before{
+        width: 100%;
+    }
