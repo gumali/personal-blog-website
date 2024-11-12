@@ -1,9 +1,8 @@
 .s2{
     display: grid;
-    grid-template-columns: max-content;
-    padding: 4em;
-    padding-top: 6em;
-    margin-left: 17em;
+    grid-template-row: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
 
 }
  .Qo{
@@ -22,7 +21,7 @@
     justify-content: center;
 }
 .qcontent .carda{
-    padding-right: 4em;
+    padding-right: 2em;
     margin-left: 1em;
 
 }
@@ -30,7 +29,7 @@
 .carda , .cardb {
 background-color: rgb(144, 168, 160);
 border-radius: 8px;
-padding: 2em;
+padding: 1em;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
 margin: 2em;
 color: rgb(20, 64, 103);
@@ -48,7 +47,7 @@ text-align: center;
     width: 9em;
     padding-left: 11em;
     margin-bottom: 1em;
-    margin-top: -1em;
+    margin-top: 0em;
 }
 
  #t{
@@ -68,7 +67,7 @@ text-align: center;
         width: 8em;
         padding-left: 15em;
         margin-bottom: 1em;
-        margin-top: -2em;
+        margin-top: 0em;
 
     }
     .s2 .carda:hover {
@@ -93,15 +92,13 @@ text-align: center;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 .s3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
     background: url(../image/b.jpg) no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+   
    
 }
    
@@ -125,3 +122,36 @@ text-align: center;
             box-shadow: 0px 0 1px 1px rgb(5, 57, 169);;
             border-radius: 20px;
         }
+        .carda #figc{
+            color: hsl(0, 13%, 82%); 
+            text-shadow: 50%;
+            
+        }
+        .cardb #figcc{
+            color: hsl(0, 13%, 82%); 
+            text-shadow: 50%;
+            
+        }
+        @media (max-width: 768px) {
+            .Qo {
+                font-size: 3em;
+            }
+            .qcontent {
+                flex-direction: column;
+            }
+            #bzuim, #cssim {
+                width: 6em;
+                padding-left: 5em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .Qo {
+                font-size: 2em;
+            }
+            #bzuim, #cssim {
+                width: 5em;
+                padding-left: 2em;
+            }
+        }
+        

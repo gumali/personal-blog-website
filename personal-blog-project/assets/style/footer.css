@@ -9,3 +9,20 @@
     text-align: center;
     color: black;
 }
+@media (max-width: 768px) {
+    .f {
+        padding: 10px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .f {
+        padding: 5px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}

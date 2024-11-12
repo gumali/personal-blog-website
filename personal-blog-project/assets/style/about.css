@@ -253,3 +253,41 @@ bottom: 40px;
         animation-delay: 3s;
         z-index: 100;
     }
+    @media (max-width: 768px) {
+        .home-content h1 {
+            font-size: 36px;
+        }
+        .home-content h3 {
+            font-size: 24px;
+        }
+        .home-content p {
+            font-size: 14px;
+        }
+        .btn-box a {
+            width: 120px;
+        }
+        .home-sci a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .home-content h1 {
+            font-size: 28px;
+        }
+        .home-content h3 {
+            font-size: 20px;
+        }
+        .home-content p {
+            font-size: 12px;
+        }
+        .btn-box a {
+            width: 100px;
+        }
+        .home-sci a {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    

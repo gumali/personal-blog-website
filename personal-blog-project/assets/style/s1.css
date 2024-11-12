@@ -38,8 +38,8 @@ margin-left: 9em;
 
 }
  .socail{
-    position: absolute;
-    bottom: 20em;
+    position: relative;
+   top: 3em;
         width: 170px;
         margin-left: 100px;
         display:flex;
@@ -94,3 +94,28 @@ margin-left: 9em;
     .socail a:hover::before{
         width: 100%;
     }
+    @media (max-width: 768px) {
+        .s1 {
+            flex-direction: column;
+            padding: 40px;
+            height: auto;
+        }
+        .s1 h2 {
+            font-size: 32px;
+        }
+        .socail a {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .s1 h2 {
+            font-size: 24px;
+        }
+        .socail a {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
