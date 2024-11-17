@@ -94,11 +94,19 @@ margin-left: 9em;
     .socail a:hover::before{
         width: 100%;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 776px) {
         .s1 {
             flex-direction: column;
-            padding: 40px;
+            padding: 250px;
             height: auto;
+        }
+        .headeri{
+            display: flex;
+        flex-wrap: wrap;
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
         }
         .s1 h2 {
             font-size: 32px;
@@ -107,11 +115,50 @@ margin-left: 9em;
             width: 30px;
             height: 30px;
         }
+        .qcontent{
+            display: flex;
+        flex-wrap: wrap;
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        }
     }
     
     @media (max-width: 480px) {
+        .s1{
+            display: flex;
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            width: 130%; 
+            padding: 0;
+        }
+        .s1-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center;
+            
+
+        }
+        .headeri{
+            display: flex;
+        flex-wrap: wrap;
+        padding: 10px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 120%;
+        }
         .s1 h2 {
             font-size: 24px;
+            
+        }
+         #click {
+
+
         }
         .socail a {
             width: 25px;

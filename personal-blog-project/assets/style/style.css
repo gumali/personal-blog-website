@@ -7,4 +7,6 @@
 body{
     background: #081b29;
     color: #ededed;
+    margin: 0; /* Remove default margin */
+    padding: 0;
 }

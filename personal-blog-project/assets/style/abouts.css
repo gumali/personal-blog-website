@@ -1,13 +1,23 @@
-
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+    justify-content: center; /* Center the content */
+    align-items: center; /* Vertically align items */
+    width: auto; /* Fit the content */
+    padding: 10px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
 .navbar a {
     font-size: 20px;
     color: black;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 30px;
     transition: .3s;
 }
-
+.logo{
+    position: relative;
+}
 .navbar a:hover,
 .navbar a.active {
     color: #00abf0;
@@ -23,14 +33,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 5%;
+    padding: 0 5;
 }
 
 .home-content h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #fff;
+    font-size: 32px; 
+    font-weight: 700; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .home-content h3 {
@@ -41,8 +51,12 @@
 }
 
 .home-content p {
-    font-size: 16px;
-    margin-bottom: 40px;
+    font-size: 14px;
+    font-weight: 500; 
+    color: #fff; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 5px 10px; 
+    border-radius: 5px;
 }
 
 .btn-box {
@@ -140,36 +154,61 @@
 
 @media (max-width: 480px) {
     .header {
+        display: flex;
+        flex-wrap: wrap;
         padding: 10px 5%;
         flex-direction: column;
         align-items: flex-start;
+        width: auto;
     }
     
+    
     .navbar {
-        width: 100%;
+        flex-direction: column;
+        width: fit-content; 
+        padding: 5px; 
+        justify-content: end;
+        
     }
     
     .navbar a {
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 14px;
+        margin-bottom: 5px; 
     }
     
     .home-content h1 {
-        font-size: 28px;
+        font-size: 32px; 
+    font-weight: 700; 
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     }
     
     .home-content h3 {
-        font-size: 18px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #00abf0; 
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
     
     .home-content p {
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 500; 
+        color: #fff; 
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 5px 10px; 
+        border-radius: 5px;
     }
     
-    .home {
-        background-size: cover;
-        padding: 0 5%;
-    }
+  
+        .home {
+            padding: 0; /* Remove additional padding */
+            background-size: cover; /* Ensure it covers the entire section */
+            background-position: center; /* Center the image properly */
+        }
+        .home-content {
+            width: 90%; /* Keep content responsive */
+            margin: 0 auto; /* Center the content */
+        }
     
     .btn-box a {
         padding: 8px 16px;

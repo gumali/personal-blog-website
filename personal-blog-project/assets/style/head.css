@@ -27,23 +27,30 @@ header .logo2{
 .uphome a:hover{
     color: brown;
 }
-@media (max-width: 768px) {
+@media (max-width: 450px) {
     header {
+        padding: 50px;
         flex-direction: column;
-        padding: 10px;
+        align-items: center;
     }
+    
+   
     .uphome a {
         font-size: 14px;
         padding: 0.5em;
+        justify-content: space-between;
+        
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .logo2 {
         font-size: medium;
     }
+   
     .uphome a {
         font-size: 12px;
-        padding: 0.4em;
+        padding: 0.2em;
+       
     }
 }

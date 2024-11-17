@@ -132,7 +132,7 @@ text-align: center;
             text-shadow: 50%;
             
         }
-        @media (max-width: 768px) {
+        @media (max-width: 775px) {
             .Qo {
                 font-size: 3em;
             }
@@ -140,7 +140,7 @@ text-align: center;
                 flex-direction: column;
             }
             #bzuim, #cssim {
-                width: 6em;
+                width: 8em;
                 padding-left: 5em;
             }
         }
@@ -153,5 +153,11 @@ text-align: center;
                 width: 5em;
                 padding-left: 2em;
             }
+        }
+        @media (max-width: 480px) {
+            .s3{
+                width: fit-content;
+            }
+            
         }
         

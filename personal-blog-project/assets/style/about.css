@@ -237,22 +237,7 @@ bottom: 40px;
         transition: 3s;
     }
 
-    .home-imghover:hover{
-        background: #081b29;
-        opacity: .8;
-    }
-    .home-imghover::after{
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #081b29;
-        animation: showRight 1s ease forwards;
-        animation-delay: 3s;
-        z-index: 100;
-    }
+  
     @media (max-width: 768px) {
         .home-content h1 {
             font-size: 36px;
